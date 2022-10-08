@@ -71,9 +71,9 @@ $con=mysqli_connect('localhost','root','','cresid');
                         <th><strong>Nombre</strong></th>  
                         <th><strong>Direccion</strong></th>
                         <th><strong>Telefono</strong></th>
-                      </tr>
+                    </tr>
 
-                      <!-- php donde se arrastran los datos de la tabla de Hospitales para que se muestren -Estefania-->
+                    <!-- php donde se arrastran los datos de la tabla de Hospitales para que se muestren -Estefania-->
                     <?php
                     /* Sentencia para traer los datos con el select y se guardan en la variable $sql */
                     $sql="select NombreHospital, Direccion,Telefono from Hospital";
@@ -82,15 +82,15 @@ $con=mysqli_connect('localhost','root','','cresid');
                     /* ponemos while para que se cumpla la condicion para que se traiga los datos de la variable $result donde se está guardadno todo */
                     while($mostrar=mysqli_fetch_array($result)){
                     ?>
-                      <tr>
+                    <tr>
                         <td><?php echo $mostrar['NombreHospital'] ?></td>
                         <td><?php echo $mostrar['Direccion'] ?></td>
                         <td><?php echo $mostrar['Telefono'] ?></td>
 
-                      </tr>
-                      <?php
-                      }
-                      ?>
+                    </tr>
+                    <?php
+                    }
+                    ?>
                     
                 </table>
 
@@ -99,7 +99,7 @@ $con=mysqli_connect('localhost','root','','cresid');
             <div id="Registro" class="menuContent">
                 <div class="titles">
                     <h1>Registro de actividades</h1>
-                  
+                
 
                 </div>
             </div>
