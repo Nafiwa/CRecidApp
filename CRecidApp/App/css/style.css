@@ -130,14 +130,22 @@
 
 /* Aqui anda fanny ----------------------------------*/
 .celdas {
-  padding: 8px;
-  text-align: left;
+  padding: 50px;
+  text-align: center;
   border-bottom: 1px solid black;
 }
 
+th {
+  display: table-cell;
+  vertical-align: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
+}
+
 .tabla {
-  border-collapse: collapse;
+  border-collapse:separate;
   width: 100%;
+  padding: 20px;
 }
 
 
@@ -432,7 +440,7 @@ img{
 }
 
 input[type=text], select {
-  width: 250px;
+  width: 300px;
   background-color: #FFF;
   padding: 8px 10px;
   margin: 8px 0;
@@ -442,4 +450,32 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
+.guardar button{
+  display:block;
+  float: right;
+  width: 180px;
+  height: max-content;
+  text-decoration: none;
+  color: white;
+  background-color: #303030;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 25px;
+  margin-left: 20px;
+  border-radius: 6px;
+  border: none;
+}
+.guardar button:hover{
+  background-color: #79BEB1;
+  color: black;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.guardar button.active {
+  color: black;
+  background-color: #79BEB1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
 
