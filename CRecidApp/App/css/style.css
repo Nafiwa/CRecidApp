@@ -21,6 +21,7 @@
   list-style: none;
   font-family: 'Inter', sans-serif;
   background-color: #E8FFFB;
+  size-adjust: block;
 }
 /*---------------------------------------------*/
 /*      This block contins logo               */
