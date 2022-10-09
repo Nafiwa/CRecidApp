@@ -438,7 +438,7 @@ img{
 .tags{
   font-size: 16px;
   color: #303030;
-  padding: 5px 50px;
+  padding: 5px 50px 5px 5px;
   display: flex;
 }
 .formu{
