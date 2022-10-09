@@ -38,10 +38,9 @@ function showSlides() {
 
 
 function Hospital() {
-  var myWindow = window.open("","myWindow", "top=150px,left=500,width=400,height=400,toolbar=yes,scrollbars=yes,resizable=yes");
+    var myWindow = window.open("","myWindow", "top=150px,left=500,width=400,height=400,toolbar=yes,scrollbars=yes,resizable=no");
 }
 
 $( "#AgregarH" ).on( "click", function() {
     $(this).attr('disabled', true);
-  });
-  
+    });

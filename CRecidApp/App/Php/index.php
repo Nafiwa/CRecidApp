@@ -1,6 +1,6 @@
 <?php
 
-$con=mysqli_connect('localhost','root','','cresid');
+$con=mysqli_connect('localhost','root','','crecid');
 
 ?>
 
