@@ -77,7 +77,7 @@
 }
 .login label{
   background-color: #303030;
-  color: rgba(121, 118, 118, 0.753);
+  color: #fff;
   text-align: left;
 }
 .login input{
@@ -406,8 +406,8 @@ img{
 /*---------------------------------------------*/
 .regitrarH{
   position: relative;
-  width: 780px;
-  height: 467px;
+  width: 600px;
+  height: 400px;
   background: #E8FFFB;
   padding: 20px;
 }
@@ -430,9 +430,16 @@ img{
   padding: 5px 50px 5px 5px;
   display: flex;
 }
-.formu{
-  padding: 30px 50px 20px 10px;
 
+input[type=text], select {
+  width: 250px;
+  background-color: #FFF;
+  padding: 8px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 

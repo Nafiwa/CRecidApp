@@ -20,18 +20,18 @@ $con=mysqli_connect('localhost','root','','crecid');
         <div class="regitrarH">
             <div class="title"><h1>Hospitales</h1></div>
             <div class="sub"><h4>Añadir nuevo hospital</h4></div>
-            <div class="form">
+            <div class="formu">
                 <form>
                     <label for="hosp" >Nombre:</label>
                     <input type="text" id="hosp" name="hosp" placeholder="Hospital General..."><br>
                     <label for="direccion">Dirección: </label>
                     <input type="text" id="direccion" name="direccion" placeholder="Avenida . . . "><br>
                     <label for="telefono">Telefono: </label>
-                    <input type="number" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
+                    <input type="text" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
                 </form>
             </div>
             <div class="guardar">
-
+            
             </div>
         </div>
     </body>
