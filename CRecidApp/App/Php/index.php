@@ -33,6 +33,8 @@ $con=mysqli_connect('localhost','root','','crecid');
             <button class="tablinks" onclick="tabs(event, 'Hospitales')">Hospitales</button>
             <br />
             <button class="tablinks" onclick="tabs(event, 'Registro')">Registro de actividades</button>
+            <br />
+            <button class="tablinks" onclick="tabs(event, 'Asignacion')">Asignación</button>
 
             <!-- <a href="#1">Internos</a>
             <a href="#">Hospitales</a>
@@ -48,7 +50,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                     </div>
                 </div>-->
                 <div class="titles">
-                    <h1>Internos</h1>
+                    <h1>Usuarios</h1>
                 </div>
                 <button class="AnadirInt" onclick="newInt()"">Añadir nuevo Interno &#10133;</button>
                 <div class="izq">
@@ -99,6 +101,13 @@ $con=mysqli_connect('localhost','root','','crecid');
             <div id="Registro" class="menuContent">
                 <div class="titles">
                     <h1>Registro de actividades</h1>
+                
+
+                </div>
+            </div>
+            <div id="Asignacion" class="menuContent">
+                <div class="titles">
+                    <h1>Asignación</h1>
                 
 
                 </div>
