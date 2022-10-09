@@ -146,24 +146,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---------------------------------------------*/
 /*      This block contins gallery             */
 /*              date : 11/09/22                */
@@ -422,17 +404,24 @@ img{
 /*              date : 11/09/22                */
 /*                  CRecid team                */
 /*---------------------------------------------*/
+.regitrarH{
+  position: relative;
+  width: 780px;
+  height: 467px;
+  background: #E8FFFB;
+  padding: 20px;
+}
 
 .title{
   font-size: 26px;
-  color:#303030;
-  padding: 5px 20px;
+  color:#79BEB1;
+  padding: 5px 5px;
   display: flex;
 }
 .sub{
-  font-size: 16px;
+  font-size: 18px;
   color:#474747;
-  padding: 5px 150px;
+  padding: 5px 5px 5px 150px;
   display: block;
 }
 .tags{
@@ -442,6 +431,8 @@ img{
   display: flex;
 }
 .formu{
-padding: 30px;
-z-index: 1000;
+  padding: 30px 50px 20px 10px;
+
 }
+
+
