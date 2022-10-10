@@ -22,18 +22,19 @@ $con=mysqli_connect('localhost','root','','crecid');
             <div class="sub"><h4>Añadir nuevo hospital</h4></div>
             <div class="formu">
                 <form>
-                    <label for="hosp" >Nombre:  </label>
-                    <input type="text" id="hosp" name="hosp" placeholder="Hospital General..."><br>
-                    <label for="direccion">Dirección: </label>
+                    <label for="hosp" >Nombre: &nbsp;&nbsp;&nbsp;</label>
+                    <input  type="text" id="hosp" name="hosp" placeholder="Hospital General..."><br>
+                    <label for="direccion">Dirección:&nbsp; </label>
                     <input type="text" id="direccion" name="direccion" placeholder="Avenida . . . "><br>
-                    <label for="telefono">Telefono:  </label>
+                    <label for="telefono">Telefono: &nbsp;</label>
                     <input type="text" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
                 </form>
+                <div class="guardar">
+                    <button type="submit" value="Submit" 
+                    onclick="">Guardar +</button>
+                </div>
             </div>
-            <div class="guardar">
-            <button type="submit" value="Submit" class=""
-                    onclick="location.href='../html/index.html'">Guardar +</button>
-            </div>
+            
         </div>
     </body>
 </html>

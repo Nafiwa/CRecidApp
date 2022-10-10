@@ -38,7 +38,7 @@ function showSlides() {
 
 
 function Hospital() {
-    var myWindow = window.open("../Php/RegHosp.php","myWindow", "top=150px,left=500,width=700,height=500,toolbar=false,scrollbars=false,resizable=false");
+    var myWindow = window.open("../Php/RegHosp.php","myWindow", "top=150px,left=250,width=530,height=430,toolbar=false,scrollbars=false,resizable=false");
 }
 
 $( "#AgregarH" ).on( "click", function() {

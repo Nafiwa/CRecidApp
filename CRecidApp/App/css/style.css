@@ -413,11 +413,11 @@ img{
 /*                  CRecid team                */
 /*---------------------------------------------*/
 .regitrarH{
-  position: relative;
-  width: 600px;
-  height: 400px;
+  width: 530px;
+  height: 430px;
   background: #E8FFFB;
   padding: 20px;
+  margin: 0px;
 }
 
 .title{
@@ -438,7 +438,10 @@ img{
   padding: 5px 50px 5px 5px;
   display: flex;
 }
-
+.formu{
+  margin: 0px;
+  padding: auto;
+}
 input[type=text], select {
   width: 300px;
   background-color: #FFF;
@@ -446,7 +449,7 @@ input[type=text], select {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
 }
 
@@ -461,7 +464,7 @@ input[type=text], select {
   font-size: 16px;
   letter-spacing: 2px;
   padding: 25px;
-  margin-left: 20px;
+  margin-left: 50px;
   border-radius: 6px;
   border: none;
 }
