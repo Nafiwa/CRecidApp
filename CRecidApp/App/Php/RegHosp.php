@@ -20,7 +20,7 @@ $con=mysqli_connect('localhost','root','','crecid');
     <body>
         <div class="regitrarH">
             <div class="title"><h1>Hospitales</h1></div>
-            <div class="sub"><h4>Añadir nuevo hospital</h4></div>
+            <div class="sub"><h4>Añadir un nuevo hospital</h4></div>
             <div class="formu">
                 <form>
                     <label for="hosp" >Nombre: &nbsp;&nbsp;&nbsp;</label>
