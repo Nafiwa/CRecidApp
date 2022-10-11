@@ -65,7 +65,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                     <h1>Hospitales</h1>
                 </div>
             <br><br>
-            <button onclick="Hospital()">Insertar Hospital</button>
+            <button onclick="Hospital()">Añadir Hospital</button>
 
                 <!--Tabla de Hospitales modificado por Estefanía-->
                 <table class="tabla">

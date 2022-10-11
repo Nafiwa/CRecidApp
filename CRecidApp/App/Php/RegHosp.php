@@ -3,6 +3,7 @@
 $con=mysqli_connect('localhost','root','','crecid');
 
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,20 +18,24 @@ $con=mysqli_connect('localhost','root','','crecid');
         <title>C•Recid</title>
     </head>
     <body>
-        <div class="title">
-            <h1>Hospitales</h1>
-        </div>
-            <h4 class="sub">Añadir nuevo hospital</h4>
-        
-        <div>
-            <form class="formu">
-                <label for="nombre" class="tags">Nombre:</label>
-                <input type="text" id="Nombre" name="Nombre"><br>
-                <label for="Direccion" class="tags">Dirección:</label>
-                <input type="text" id="Direccion" name="Direccion"><br>
-                <label for="Telefono" class="tags">Teléfono:</label>
-                <input type="text" id="Telefono" name="Telefono">
-            </form>
+        <div class="regitrarH">
+            <div class="title"><h1>Hospitales</h1></div>
+            <div class="sub"><h4>Añadir nuevo hospital</h4></div>
+            <div class="formu">
+                <form>
+                    <label for="hosp" >Nombre: &nbsp;&nbsp;&nbsp;</label>
+                    <input  type="text" id="hosp" name="hosp" placeholder="Hospital General..."><br>
+                    <label for="direccion">Dirección:&nbsp; </label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Avenida . . . "><br>
+                    <label for="telefono">Telefono: &nbsp;</label>
+                    <input type="text" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
+                </form>
+                <div class="guardar">
+                    <button type="submit" value="Submit" 
+                    onclick="">Guardar +</button>
+                </div>
+            </div>
+            
         </div>
     </body>
 </html>
