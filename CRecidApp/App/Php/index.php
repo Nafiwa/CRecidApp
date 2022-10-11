@@ -28,7 +28,7 @@ $con=mysqli_connect('localhost','root','','crecid');
             <img src="../img/logoCrecid.png"/>
             </a>
             <br /><br /><br />
-            <button class="tablinks" onclick="tabs(event, 'Internos' )">Internos</button>
+            <button class="tablinks" onclick="tabs(event, 'Usuarios' )">Usuarios</button>
             <br />
             <button class="tablinks" onclick="tabs(event, 'Hospitales')">Hospitales</button>
             <br />
@@ -41,7 +41,7 @@ $con=mysqli_connect('localhost','root','','crecid');
             <a href="#">Registro de actividades</a>-->
         </div>
         <div class="body">
-            <div id="Internos" class="menuContent">
+            <div id="Usuarios" class="menuContent">
                 <!--<div class="window-notice" id="window-notice">
                     <div class="content">
                         <div class="content-text">Este sitio utiliza cookies para obtener la mejor experiencia en nuestra web. 
@@ -66,7 +66,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                 </div>
             <br><br>
             <button onclick="Hospital()">Añadir Hospital</button>
-
+            <div>
                 <!--Tabla de Hospitales modificado por Estefanía-->
                 <table class="tabla">
                     <tr>
@@ -94,7 +94,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                     ?>
                     
                 </table>
-                    
+            </div>     
 
 
             </div>
