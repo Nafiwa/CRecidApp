@@ -68,33 +68,24 @@ $con=mysqli_connect('localhost','root','','crecid');
             <button onclick="Hospital()">Añadir Hospital</button>
 
                 <!--Tabla de Hospitales modificado por Estefanía-->
-                <table id="tabla">
+                <table class="tabla">
                     <tr>
                         <th><strong>Nombre</strong></th>  
                         <th><strong>Direccion</strong></th>
                         <th><strong>Telefono</strong></th>
                     </tr>
-
-                    <!-- php donde se arrastran los datos de la tabla de Hospitales para que se muestren -Estefania-->
-                    <?php
-                    /* Sentencia para traer los datos con el select y se guardan en la variable $sql */
-                    $sql="select NombreHospital, Direccion,Telefono from Hospital";
-                    /* traemos la variable $sql que contiene la sentencia del select y traemos la conexión a la base de datos(con)*/
-                    $result=mysqli_query($con,$sql);
-                    /* ponemos while para que se cumpla la condicion para que se traiga los datos de la variable $result donde se está guardadno todo */
-                    while($mostrar=mysqli_fetch_array($result)){
-                    ?>
                     <tr>
-                        <td><?php echo $mostrar['NombreHospital'] ?></td>
-                        <td><?php echo $mostrar['Direccion'] ?></td>
-                        <td><?php echo $mostrar['Telefono'] ?></td>
-
+                        <th><strong>Nombre</strong></th>  
+                        <th><strong>Direccion</strong></th>
+                        <th><strong>Telefono</strong></th>
                     </tr>
-                    <?php
-                    }
-                    ?>
-                    
+                    <tr>
+                        <th><strong>Nombre</strong></th>  
+                        <th><strong>Direccion</strong></th>
+                        <th><strong>Telefono</strong></th>
+                    </tr>
                 </table>
+                    
 
 
             </div>

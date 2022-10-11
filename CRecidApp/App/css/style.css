@@ -130,19 +130,22 @@
 
 /* Aqui anda fanny ----------------------------------*/
 
-#tabla {
+table {
+  margin: 30px;
+  padding: 15px;
   border-collapse: collapse;
   width: 100%;
+  display: block;
 }
-#tabla th, .tabla td{
+table th, .tabla td{
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#tabla tr:nth-child(even){background-color: #f2f2f2;}
-#tabla tr:hover {background-color: #ddd;}
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {background-color: #ddd;}
 
-#tabla th {
+table th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
