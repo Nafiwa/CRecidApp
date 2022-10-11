@@ -71,19 +71,28 @@ $con=mysqli_connect('localhost','root','','crecid');
                 <table class="tabla">
                     <tr>
                         <th><strong>Nombre</strong></th>  
-                        <th><strong>Direccion</strong></th>
-                        <th><strong>Telefono</strong></th>
+                        <th><strong>Dirección</strong></th>
+                        <th><strong>Teléfono</strong></th>
                     </tr>
+                    <!--php donde se arrastran los datos de la tabla de Hospitales para que se muestren -Estefania-->
+                    <?php
+                    /* Sentencia para traer los datos con el select y se guardan en la variable $sql */
+                    $sql="select NombreHospital, Direccion,Telefono from Hospital";
+                    /* traemos la variable $sql que contiene la sentencia del select y traemos la conexión a la base de datos(con)*/
+                    $result=mysqli_query($con,$sql);
+                    /* ponemos while para que se cumpla la condicion para que se traiga los datos de la variable $result donde se está guardadno todo */
+                    while($mostrar=mysqli_fetch_array($result)){
+                    ?>
                     <tr>
-                        <th><strong>Nombre</strong></th>  
-                        <th><strong>Direccion</strong></th>
-                        <th><strong>Telefono</strong></th>
+                        <td><?php echo $mostrar['NombreHospital'] ?></td>
+                        <td><?php echo $mostrar['Direccion'] ?></td>
+                        <td><?php echo $mostrar['Telefono'] ?></td>
+
                     </tr>
-                    <tr>
-                        <th><strong>Nombre</strong></th>  
-                        <th><strong>Direccion</strong></th>
-                        <th><strong>Telefono</strong></th>
-                    </tr>
+                    <?php
+                    }
+                    ?>
+                    
                 </table>
                     
 

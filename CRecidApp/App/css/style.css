@@ -128,29 +128,31 @@
 
 
 
-/* Aqui anda fanny ----------------------------------*/
+/* Aqui anda fanny y corrigio sofia ----------------------------------*/
 
 table {
-  margin: 30px;
-  padding: 15px;
+  margin: 70px;
+  padding: 25px;
   border-collapse: collapse;
   width: 100%;
-  display: block;
+
 }
 table th, .tabla td{
-  border: 1px solid #ddd;
-  padding: 8px;
+  border: none;
+  padding: 25px;
 }
 
-table tr:nth-child(even){background-color: #f2f2f2;}
-table tr:hover {background-color: #ddd;}
+table tr:nth-child(even){background-color: #79BEB1;}
+table tr:hover {background-color: #303030;}
 
 table th {
   padding-top: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04AA6D;
-  color: white;
+  background-color: #79BEB1;
+  color: black;
 }
 
 
