@@ -44,3 +44,7 @@ function Hospital() {
 $( "#AgregarH" ).on( "click", function() {
     $(this).attr('disabled', true);
     });
+
+
+
+   
