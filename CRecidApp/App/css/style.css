@@ -57,6 +57,7 @@
 }
 
 .menu{
+  height: max-content;
   width: max-content;
   background-color: #303030;
   padding: 20px;
