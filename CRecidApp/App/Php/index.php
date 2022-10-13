@@ -61,6 +61,7 @@ include_once("conexion.php");
                         
                 </div>
             </div>
+            
             <div id="Hospitales" class="menuContent">
                 <div class="titles">
                     <h1>Hospitales</h1>

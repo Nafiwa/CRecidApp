@@ -1,7 +1,7 @@
 <?php
 
 $con=mysqli_connect('localhost','root','','crecid');
-
+include_once'conexion.php';
 ?>
 
 <!DOCTYPE html>
