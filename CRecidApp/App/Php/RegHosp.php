@@ -1,6 +1,5 @@
 <?php
 
-$con=mysqli_connect('localhost','root','','crecid');
 include_once("conexion.php");
 
 ?>
@@ -22,7 +21,14 @@ include_once("conexion.php");
         <div class="regitrarH">
             <div class="title"><h1>Hospitales</h1></div>
             <div class="sub"><h4>Añadir un nuevo hospital</h4></div>
-            <div class="formu">
+            <div>
+                <form  method="POST">
+                <input type="text" name="buscar" id="">
+                <input type="submit" Value="Buscar">
+                <a href="nuevo.php">Nuevo</a>
+                </form>
+             </div>
+             <div class="formu">
             <form action="QueryInsertH.php" id="frmAutentica" name="frmAutentica" method="post">
                     <label for="hospital" >Nombre: &nbsp;&nbsp;&nbsp;</label>
                     <input  type="text" id="hospital" name="hospital" placeholder="Hospital General..."><br>
@@ -31,7 +37,7 @@ include_once("conexion.php");
                     <label for="telefono">Telefono: &nbsp;</label>
                     <input type="text" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
                     <input type="submit" value="Enviar" id="btnEnviar" name="btnEnviar" onclick="validaForma()">
-                    <tr class=blanco height="60px">
+                   
                     <tr class=blanco height="60px">
 			<td colspan="2">
 				<font color="red">
@@ -77,8 +83,13 @@ function validaForma(){
 					}
 				});
 			}
+
+            
 		});
+        
 }
+
 </script>
+
     </body>
 </html>

@@ -297,6 +297,7 @@ img{
 .body{
     
   width: max-content;
+  flex-wrap: wrap;
 }
 
 .body h1{
@@ -489,4 +490,28 @@ input[type=text], select {
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+
+.respon{
+  min-width: 300px;
+}
+
+
+
+
+
+
+
+.TABLA-RESPONSIVA{
+  width:70%;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.th-responsiva{
+  text-align: left;
+  padding: 6px;
+
+}
+
 

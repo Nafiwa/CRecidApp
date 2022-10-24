@@ -1,8 +1,7 @@
 <?php
 
-$con=mysqli_connect('localhost','root','','crecid');
 include_once("conexion.php");
-
+$con=mysqli_connect('localhost','root','','crecid');
 ?>
 
 
@@ -70,9 +69,9 @@ include_once("conexion.php");
                 </div>
             <br><br>
             <button onclick="Hospital()">Añadir Hospital</button>
-            <div>
+            <div class="respon" >
                 <!--Tabla de Hospitales modificado por Estefanía-->
-                <table class="tabla">
+                <table class="tabla" id="actualizar">
                     <tr>
                         <th><strong>Nombre</strong></th>  
                         <th><strong>Dirección</strong></th>
@@ -94,13 +93,15 @@ include_once("conexion.php");
 
                     </tr>
                     <?php
+            
                     }
                     ?>
-                    
+
                 </table>
+                
             </div>     
 
-
+        
             </div>
             <div id="Registro" class="menuContent">
                 <div class="titles">
