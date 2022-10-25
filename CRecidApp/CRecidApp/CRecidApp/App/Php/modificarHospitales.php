@@ -1,33 +1,10 @@
-<<?php 
+<?php
 
-session_start();
+include_once("conexion.php");
 $con=mysqli_connect('localhost','root','','crecid');
-include("conexion.php");
 
-if(!empty($_POST)){
-
-}
-
-
-$NombreHospital = $_REQUEST['NombreHospital'] ;
-
-$sqlUpdate = mysqli_query($con,"SELECT * FROM hospital WHERE NombreHospital=$NombreHospital");
-mysqli_close($con);
-$result_sql = mysqli_num_rows($sqlUpdate);
-
-if($result_sql =0){
-    header('Location: ejemplo.php');
-
-}else{
-    while($data = mysqli_fetch_array($sqlUpdate)){
-        $NombreHospital = $data['NombreHospital'];
-        $Direccion = $data['Direccion'];
-        $Telefono = $data['Telefono'];
-        $Estatus = $data['Estatus'];
-
-    }
-}
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -43,20 +20,34 @@ if($result_sql =0){
         <title>C•Recid</title>
     </head>
     <body>
-        <h1> ACTUALIZAR HOSPITAL </h1>
+        <?php
+        error_reporting(0);
+        $hospital = $_GET["hospital"];
+        $direccion = $_GET["direccion"];
+        $telefono = $_GET["telefono"];
+        ?>
+
+        <h1> ACTUALIZAR HOSPITAL </h1><br> <br>
         <div><?php echo isset($alert) ? $alert : ''; ?></div>
         <div style="overflow-x: auto;">
         
-        <form action="" method="post">
-        <label for="hospital" >Nombre: &nbsp;&nbsp;&nbsp;</label>
-                    <input  type="hidden" id="NombreHospital" name="NombreHospital" value="<?php echo $NombreHospital; ?>"><br>
+        <form action="ModHosp.php" method="post">
+
+                    <label for="hospital" >Nombre: &nbsp;&nbsp;&nbsp;</label>
+                    <input  type="text" id="hospital" name="hospital" value="<?=$hospital?>"><br>
+                    
                     <label for="direccion">Dirección:&nbsp; </label>
-                    <input type="text" id="Direccion" name="Direccion" value="<?php echo $Direccion; ?>"><br>
+                    <input type="text" id="direccion" name="direccion" value="<?=$direccion?>"><br>
+                    
                     <label for="telefono">Telefono: &nbsp;</label>
-                    <input type="text" id="Telefono" name="Telefono"value="<?php echo $Telefono; ?>"><br><br>
-                    <input type="text" id="Estatus" name="Estatus" value="<?php echo $Estatus; ?>"><br><br>
+                    <input type="text" id="telefono" name="telefono" value="<?=$telefono?>"><br><br>
+                    
+                    
                     <input type="submit" value="Actualizar">
-        </form>
+                    <td><a href="ejemplo.php">Cancelar</a></td>
+                   
+                    
+                </form>
 
         </div>
     </body>
