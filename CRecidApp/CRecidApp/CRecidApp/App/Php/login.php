@@ -22,9 +22,9 @@
                 <br /><br /><br />
                 <form action="validarLogin.php" method="POST"> 
                 <label for="Usuario">Usuario:</label><br>
-                    <input type="text" id="Usuario" name="Usuario" value="19051131"><br>
+                    <input type="text" id="Usuario" name="Usuario" ><br>
                     <label for="Contrasena">Contraseña:</label><br>
-                    <input type="password" id="Contrasena" name="Contrasena" value="*********"><br><br>
+                    <input type="password" id="Contrasena" name="Contrasena" ><br><br>
                     <div> <?php echo isset($alert) ? $alert : '' ?> </div>
                     <input type="submit" id="Ingresar">
                 </form>
