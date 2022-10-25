@@ -1,45 +1,23 @@
 <?php
 
 $con=mysqli_connect('localhost','root','','crecid');
+include_once("conexion.php");
+
+        $hospital = $_POST["hospital"];
+		$direccion = $_POST["direccion"];
+		$telefono = $_POST["telefono"];
+		#Aqui vamos a Actualizar los datos ingresados(los valores deben de ser iguales a los de nuestra base de datos)
+		$actualizardatos = "UPDATE hospital SET NombreHospital= '$hospital',
+                                            Direccion = '$direccion',
+                                            Telefono ='$telefono' 
+                                            WHERE hospital.NombreHospital = '$hospital'";
+												
+		$ejecutarActualizacion = mysqli_query($con,$actualizardatos);
+
+        if(!$ejecutarActualizacion){
+            echo "<script>alert('No se pudo actualizar');window.history.go(-1);</script>";
+        } else{
+            header("Location: ejemplo.php");
+        }
 
 ?>
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/style.css" type="text/css" />
-        <script type="text/javascript" src="../javaScript/javascript.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet" />
-        <title>C•Recid</title>
-    </head>
-    <body>
-        <div class="regitrarH">
-            <div class="title"><h1>Hospitales</h1></div>
-            <div class="sub"><h4>Modificar hospital</h4></div>
-            <div class="formu">
-                <form>
-                    <label for="hosp" >Nombre: &nbsp;&nbsp;&nbsp;</label>
-                    <input  type="text" id="hosp" name="hosp" placeholder="Hospital General..."><br>
-                    <label for="direccion">Dirección:&nbsp; </label>
-                    <input type="text" id="direccion" name="direccion" placeholder="Avenida . . . "><br>
-                    <label for="telefono">Telefono: &nbsp;</label>
-                    <input type="text" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
-                </form>
-                <div class="borrar">
-                    <button type="delate" value="delate" 
-                    onclick="">Guardar +</button>
-                </div>
-                <div class="guardar">
-                    <button type="submit" value="Submit" 
-                    onclick="">Guardar +</button>
-                </div>
-            </div>
-            
-        </div>
-    </body>
-</html>
