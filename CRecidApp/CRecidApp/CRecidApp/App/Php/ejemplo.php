@@ -24,7 +24,15 @@ $resultSelect=mysqli_query($con,$sqlSelect);
         <div>
             HOSPITALES
         </div>
-        <BR><BR>
+        <br><br>
+        <div>
+            <form action="BuscarHospitales.php" method="post">
+                <input type="text" name="buscar">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+
+        <BR>
         <div style="overflow-x: auto;">
         <TABLE CLASS="TABLA-RESPONSIVA">
             <thead>
@@ -47,11 +55,18 @@ $resultSelect=mysqli_query($con,$sqlSelect);
                         <td class="th-responsiva"><?php echo $mostrar['Direccion'] ?></td>
                         <td class="th-responsiva"><?php echo $mostrar['Telefono'] ?></td>
                         <td class="th-responsiva"><?php echo $mostrar['Estatus'] ?></td>
-                        <td class="th-responsiva"><a href="modificarHospitales.php">
+
+                        <td class="th-responsiva"><a href="modificarHospitales.php?  
+                        hospital=<?php echo $mostrar['NombreHospital'] ?> &
+                        direccion=<?php echo $mostrar['Direccion'] ?> &
+                        telefono=<?php echo $mostrar['Telefono'] ?> &
+                        estatus=<?php echo $mostrar['Estatus'] ?>">
                             <img src="../img/icono.png" height="20px" width="20px">
                             </a></td>
-                        <td class="th-responsiva"><a href="modificarHospitales.php">
-                            <img src="C:\xampp\htdocs\CRecidApp\CRecidApp\CRecidApp\imagenes\pencil.png">
+
+                        <td class="th-responsiva"><a href="EliminarHospitales.php?
+                        hospital=<?php echo $mostrar['NombreHospital'] ?>">
+                            <img src="../img/trash-var-flat.png" height="20px" width="20px">
                         </a></td>
                     </tr>
                     <?php
