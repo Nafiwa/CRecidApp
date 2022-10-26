@@ -1,3 +1,8 @@
+<?php
+
+include_once("conexion.php");
+$con=mysqli_connect('localhost','root','','crecid');
+?>
 <!DOCTYPE html>
 <html>
 

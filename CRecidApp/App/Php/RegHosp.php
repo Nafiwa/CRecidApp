@@ -27,8 +27,8 @@ include_once("conexion.php");
                 <input type="submit" Value="Buscar">
                 <a href="nuevo.php">Nuevo</a>
                 </form>
-             </div>
-             <div class="formu">
+            </div>
+            <div class="formu">
             <form action="QueryInsertH.php" id="frmAutentica" name="frmAutentica" method="post">
                     <label for="hospital" >Nombre: &nbsp;&nbsp;&nbsp;</label>
                     <input  type="text" id="hospital" name="hospital" placeholder="Hospital General..."><br>
@@ -37,7 +37,7 @@ include_once("conexion.php");
                     <label for="telefono">Telefono: &nbsp;</label>
                     <input type="text" id="telefono" name="telefono" placeholder="(844)000-0000"><br><br>
                     <input type="submit" value="Enviar" id="btnEnviar" name="btnEnviar" onclick="validaForma()">
-                   
+                
                     <tr class=blanco height="60px">
 			<td colspan="2">
 				<font color="red">
