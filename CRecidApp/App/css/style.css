@@ -485,16 +485,22 @@ table th {
 .TABLA-RESPONSIVA{
   width:70%;
   border-collapse: collapse;
+  margin: 5%;
 }
 
-.tr-responsiva:nth-child(even) {background-color: #f2f2f2;}
+.tr-responsiva:nth-child(even) {background-color: #79BEB1;}
 .tr-responsiva:hover {background-color: #303030;}
 
 .th-responsiva{
   text-align: left;
   padding: 6px;
-  background-color: #79BEB1;
+  background-color: #f2f2f2;
   color: black;
 }
-
+.th-responsiva1{
+  text-align: left;
+  padding: 6px;
+  background: #303030;
+  color: white;
+}
 

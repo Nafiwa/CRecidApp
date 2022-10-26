@@ -38,12 +38,12 @@ $resultSelect=mysqli_query($con,$sqlSelect);
         <TABLE CLASS="TABLA-RESPONSIVA">
             <thead>
                 <tr class="tr-responsiva">
-                    <th class="th-responsiva"><strong>Nombre</strong></th>  
-                    <th class="th-responsiva"><strong>Dirección</strong></th>
-                    <th class="th-responsiva"><strong>Teléfono</strong></th>
-                    <th class="th-responsiva"><strong>Estatus</strong></th>
-                    <th class="th-responsiva"></th>
-                    <th class="th-responsiva"></th>
+                    <th class="th-responsiva1">Nombre</th>  
+                    <th class="th-responsiva1">Teléfono</th>
+                    <th class="th-responsiva1">Estatus</th>
+                    <th class="th-responsiva1">Dirección</th>
+                    <th class="th-responsiva1"></th>
+                    <th class="th-responsiva1"></th>
                 </tr>
             </thead>
 
