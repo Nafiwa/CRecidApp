@@ -132,30 +132,7 @@
 
 /* Aqui anda fanny y corrigio sofia ----------------------------------*/
 
-table {
-  margin: 30px;
-  padding: 25px;
-  border-collapse: collapse;
-  width: 100%;
 
-}
-table th, .tabla td{
-  border: none;
-  padding: 25px;
-}
-
-table tr:nth-child(even){background-color: #79BEB1;}
-table tr:hover {background-color: #303030;}
-
-table th {
-  padding-top: 12px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #79BEB1;
-  color: black;
-}
 
 
 /* Aqui termino fanny ----------------------------------*/
@@ -493,18 +470,31 @@ input[type=text], select {
 
 
 
+table th {
+  padding-top: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #79BEB1;
+  color: black;
+}
+
+
 
 .TABLA-RESPONSIVA{
   width:70%;
   border-collapse: collapse;
 }
 
-tr:nth-child(even) {background-color: #f2f2f2;}
+.tr-responsiva:nth-child(even) {background-color: #f2f2f2;}
+.tr-responsiva:hover {background-color: #303030;}
 
 .th-responsiva{
   text-align: left;
   padding: 6px;
-
+  background-color: #79BEB1;
+  color: black;
 }
 
 

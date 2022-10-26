@@ -37,7 +37,7 @@ $resultSelect=mysqli_query($con,$sqlSelect);
         <div style="overflow-x: auto;">
         <TABLE CLASS="TABLA-RESPONSIVA">
             <thead>
-                <tr>
+                <tr class="tr-responsiva">
                     <th class="th-responsiva"><strong>Nombre</strong></th>  
                     <th class="th-responsiva"><strong>Dirección</strong></th>
                     <th class="th-responsiva"><strong>Teléfono</strong></th>
@@ -51,7 +51,7 @@ $resultSelect=mysqli_query($con,$sqlSelect);
                 <?php
                 while($mostrar=mysqli_fetch_array($resultSelect)){
                     ?>
-                    <tr>
+                    <tr class="tr-responsiva">
                         <td class="th-responsiva"><?php echo $mostrar['NombreHospital'] ?></td>
                         <td class="th-responsiva"><?php echo $mostrar['Direccion'] ?></td>
                         <td class="th-responsiva"><?php echo $mostrar['Telefono'] ?></td>
