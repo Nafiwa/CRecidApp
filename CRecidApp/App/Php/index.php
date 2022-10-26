@@ -1,10 +1,3 @@
-<?php
-
-include_once("conexion.php");
-$con=mysqli_connect('localhost','root','','crecid');
-?>
-
-
 
 <!DOCTYPE html>
 <html>
@@ -54,7 +47,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                 <div class="titles">
                     <h1>Usuarios</h1>
                 </div>
-                <button class="AnadirInt" onclick="newInt()"">Añadir nuevo Interno &#10133;</button>
+                <button class="AnadirInt" onclick="newInt()"">Añadir nuevo Usuario &#10133;</button>
                 <div class="izq">
                     
                 </div>
@@ -63,7 +56,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                 </div>
             </div>
             
-            <div id="Hospitales" class="menuContent">
+            <div id="Hospitales" class="menuContent" style="display: none;">
                 <div class="titles">
                     <h1>Hospitales</h1>
                 </div>
@@ -103,14 +96,14 @@ $con=mysqli_connect('localhost','root','','crecid');
 
         
             </div>
-            <div id="Registro" class="menuContent">
+            <div id="Registro" class="menuContent" style="display: none;">
                 <div class="titles">
                     <h1>Registro de actividades</h1>
                 
 
                 </div>
             </div>
-            <div id="Asignacion" class="menuContent">
+            <div id="Asignacion" class="menuContent" style="display: none;">
                 <div class="titles">
                     <h1>Asignación</h1>
                 

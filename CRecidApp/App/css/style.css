@@ -57,7 +57,7 @@
 }
 
 .menu{
-  height: max-content;
+  height: 150%;
   width: max-content;
   background-color: #303030;
   padding: 20px;
@@ -106,8 +106,9 @@
   position: absolute;
   width: 150px;
   height: max-content;
-  top: 500px;
-  left: 120px;
+  top: 3px;
+  left: 75px;
+  margin: 5%;
   background: #E8FFFB;
   border-radius: 6px;
   border:none;
@@ -306,15 +307,7 @@ img{
   font-size: 60px;
   letter-spacing: 4px;
 }
-.internos{
-  display: block;
-}
-.hospital{
-  display: none;
-}
-.registro{
-  display: none;
-}
+
 .body button{
   box-sizing: border-box;
   display: flex;

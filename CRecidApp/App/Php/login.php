@@ -1,3 +1,9 @@
+<?php
+
+include_once("conexion.php");
+$con=mysqli_connect('localhost','root','','crecid');
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,11 +28,11 @@
                 <br /><br /><br />
                 <form action="validarLogin.php" method="POST"> 
                 <label for="Usuario">Usuario:</label><br>
-                    <input type="text" id="Usuario" name="Usuario" value="19051131"><br>
+                    <input type="text" id="Usuario" name="Usuario" placeholder="19051131"><br>
                     <label for="Contrasena">Contraseña:</label><br>
-                    <input type="password" id="Contrasena" name="Contrasena" value="*********"><br><br>
+                    <input type="password" id="Contrasena" name="Contrasena" placeholder="*********"><br><br>
                     <div> <?php echo isset($alert) ? $alert : '' ?> </div>
-                    <input type="submit" id="Ingresar">
+                    <button type="submit"  id="Ingresar">Ingresar</button>
                 </form>
 
                 
