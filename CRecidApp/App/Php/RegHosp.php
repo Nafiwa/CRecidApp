@@ -24,7 +24,7 @@ include_once("conexion.php");
             <div>
                 <form  method="POST">
                 <input type="text" name="buscar" id="">
-                <input type="submit" Value="Buscar">
+                <button type="submit"  id="guardar">Buscar</button>
                 <a href="nuevo.php">Nuevo</a>
                 </form>
             </div>

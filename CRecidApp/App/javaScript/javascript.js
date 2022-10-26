@@ -36,6 +36,9 @@ function showSlides() {
     setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+function Usuario() {
+    var myWindow = window.open("../Php/RegUsu.php","myWindow", "top=150px,left=250,width=530,height=430,toolbar=false,scrollbars=false,resizable=false");
+}
 
 function Hospital() {
     var myWindow = window.open("../Php/RegHosp.php","myWindow", "top=150px,left=250,width=530,height=430,toolbar=false,scrollbars=false,resizable=false");
@@ -47,4 +50,3 @@ $( "#AgregarH" ).on( "click", function() {
 
 
 
-   

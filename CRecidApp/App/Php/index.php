@@ -51,7 +51,7 @@ $con=mysqli_connect('localhost','root','','crecid');
                 <div class="titles">
                     <h1>Usuarios</h1>
                 </div>
-                <button class="AnadirInt" onclick="newInt()"">Añadir nuevo Usuario &#10133;</button>
+                <button class="AnadirInt" onclick="Usuario()">Añadir nuevo Usuario &#10133;</button>
                 <div class="izq">
                     
                 </div>
