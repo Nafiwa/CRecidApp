@@ -2,6 +2,9 @@
 
 include_once("conexion.php");
 $con=mysqli_connect('localhost','root','','crecid');
+
+$sqlSelect = "SELECT * FROM hospital";
+$resultSelect=mysqli_query($con,$sqlSelect);
 ?>
 
 
@@ -69,37 +72,58 @@ $con=mysqli_connect('localhost','root','','crecid');
                 </div>
             <br><br>
             <button onclick="Hospital()">Añadir Hospital</button>
-            <div class="respon" >
-                <!--Tabla de Hospitales modificado por Estefanía-->
-                <table class="tabla" id="actualizar">
-                    <tr>
-                        <th><strong>Nombre</strong></th>  
-                        <th><strong>Dirección</strong></th>
-                        <th><strong>Teléfono</strong></th>
-                    </tr>
-                    <!--php donde se arrastran los datos de la tabla de Hospitales para que se muestren -Estefania-->
-                    <?php
-                    /* Sentencia para traer los datos con el select y se guardan en la variable $sql */
-                    $sql="select NombreHospital, Direccion,Telefono from Hospital";
-                    /* traemos la variable $sql que contiene la sentencia del select y traemos la conexión a la base de datos(con)*/
-                    $result=mysqli_query($con,$sql);
-                    /* ponemos while para que se cumpla la condicion para que se traiga los datos de la variable $result donde se está guardadno todo */
-                    while($mostrar=mysqli_fetch_array($result)){
+            <br>
+            <div>
+            <form action="BuscarHospitales.php" method="post">
+                <input type="text" name="buscar">
+                <input type="submit" value="Buscar">
+            </form>
+        </div>
+
+        <BR>
+            <div style="overflow-x: auto;">
+        <TABLE CLASS="TABLA-RESPONSIVA">
+            <thead>
+                <tr>
+                    <th class="th-responsiva"><strong>Nombre</strong></th>  
+                    <th class="th-responsiva"><strong>Dirección</strong></th>
+                    <th class="th-responsiva"><strong>Teléfono</strong></th>
+                    <th class="th-responsiva"><strong>Estatus</strong></th>
+                    <th class="th-responsiva"></th>
+                    <th class="th-responsiva"></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <?php
+                while($mostrar=mysqli_fetch_array($resultSelect)){
                     ?>
                     <tr>
-                        <td><?php echo $mostrar['NombreHospital'] ?></td>
-                        <td><?php echo $mostrar['Direccion'] ?></td>
-                        <td><?php echo $mostrar['Telefono'] ?></td>
+                        <td class="th-responsiva"><?php echo $mostrar['NombreHospital'] ?></td>
+                        <td class="th-responsiva"><?php echo $mostrar['Direccion'] ?></td>
+                        <td class="th-responsiva"><?php echo $mostrar['Telefono'] ?></td>
+                        <td class="th-responsiva"><?php echo $mostrar['Estatus'] ?></td>
 
+                        <td class="th-responsiva"><a href="modificarHospitales.php?  
+                        hospital=<?php echo $mostrar['NombreHospital'] ?> &
+                        direccion=<?php echo $mostrar['Direccion'] ?> &
+                        telefono=<?php echo $mostrar['Telefono'] ?> &
+                        estatus=<?php echo $mostrar['Estatus'] ?>">
+                            <img src="../img/icono.png" height="20px" width="20px">
+                            </a></td>
+
+                        <td class="th-responsiva"><a href="EliminarHospitales.php?
+                        hospital=<?php echo $mostrar['NombreHospital'] ?>">
+                            <img src="../img/trash-var-flat.png" height="20px" width="20px">
+                        </a></td>
                     </tr>
                     <?php
             
                     }
                     ?>
-
-                </table>
-                
-            </div>     
+            </tbody>
+        </TABLE>
+        </div>    
 
         
             </div>

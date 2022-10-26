@@ -1,4 +1,4 @@
-<<<<<<< HEAD:CRecidApp/CRecidApp/CRecidApp/App/Php/conexion.php
+
 <?php
 class Database{
 function conectar(){
@@ -36,24 +36,3 @@ function conectar(){
 
 }
 
-
-=======
-<?php
-function conectar(){
-    $user="root";
-    $pass="";
-    $server="localhost";
-    $db="crecid";
-
-    $conexion= new mysqli($server,$user,$pass,$db);
-
-    if($conexion->connect_errno){
-        return "Tu puedes, intentale otra ves";
-    } else {
-        return "Conectado jiji";
-    }
-    
-
-}
-?>
->>>>>>> e1e960f1adef3aac706fd99c2d00613c1a451887:CRecidApp/App/Php/conexion.php
